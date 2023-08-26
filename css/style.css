@@ -1,0 +1,76 @@
+/** COMMON CSS STARTS HERE */
+:root{
+    --primary-color: white;
+    --text-color: black;
+}
+
+.darkmood{
+    --primary-color: black;
+    --text-color: white;
+    transition: 0.6s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: cursive, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    transition: 0.6s;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+/** COMMON CSS ENDS HERE */
+
+#mood{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#mood h2{
+    font-size: 60px;
+    margin-right: 50px;
+    color: var(--text-color);
+}
+#mood button{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: none;
+}
+#mood button span{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    font-size: 40px;
+    transition: 0.6s;
+}
+#mood button .sun{
+    background-color: rgb(237, 198, 7);
+}
+#mood button .moon{
+    background-color: rgb(2, 2, 30);
+    color: whitesmoke;
+}
